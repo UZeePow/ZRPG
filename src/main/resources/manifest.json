@@ -1,14 +1,14 @@
 {
-    "Group": "Example",
-    "Name": "ExamplePlugin",
+    "Group": "Zeenius",
+    "Name": "ZRPG",
     "Version": "0.0.2",
-    "Description": "An example plugin for HyTale!",
+    "Description": "A plugin for Hytale that's a skill-tree RPG based system inspired by Path of Exile.",
     "Authors": [
         {
-            "Name": "It's you!"
+            "Name": "Zeenius"
         }
     ],
-    "Website": "example.org",
+    "Website": "zrpg.zee",
     "ServerVersion": "*",
     "Dependencies": {
         
@@ -17,6 +17,6 @@
         
     },
     "DisabledByDefault": false,
-    "Main": "org.example.plugin.ExamplePlugin",
+    "Main": "zee.zrpg.plugin.ZRPGMain",
     "IncludesAssetPack": true
 }

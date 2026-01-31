@@ -129,3 +129,9 @@ tasks.register('generateVSCodeLaunch') {
         launchFile.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(launchConfig))
     }
 }
+
+tasks.jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from ("src/main/resources")
+}

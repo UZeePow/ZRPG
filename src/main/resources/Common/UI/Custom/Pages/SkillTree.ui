@@ -1,0 +1,29 @@
+$C = "../Common.ui";
+
+Group {
+    Anchor: (Width: 400, Height: 250);
+    Background: #1a1a2e(0.95);
+    LayoutMode: Top;
+    Padding: (Full: 20);
+
+    Label #Title {
+        Text: "Hello World";
+        Anchor: (Height: 40);
+        Style: (FontSize: 24, TextColor: #FFFFFF, Alignment: Center);
+    }
+
+    $C.@CheckBox #Toggle {
+        Anchor: (Width: 22, Height: 22);
+        Background: (TexturePath: "Common/CheckBoxFrame.png", Border: 7);
+        Padding: (Full: 4);
+        Style: @DefaultCheckBoxStyle;
+    }
+
+    $C.@NumberField #NumberField {
+        Style: @DefaultInputFieldStyle;
+        PlaceholderStyle: @DefaultInputFieldPlaceholderStyle;
+        Background: @InputBoxBackground;
+        Anchor: (Width: 38, Height: 38);
+        Padding: (Horizontal: 10);
+    }
+}
